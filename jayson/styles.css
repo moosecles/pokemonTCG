@@ -1,0 +1,34 @@
+body {
+    background-color: #E9ECEF;
+    margin: 0 100px;
+}
+
+nav {
+    background-color: #E9ECEF;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+    height: 50%;
+    width: auto;
+    margin-right: 75%;
+}
+
+nav input{
+    background-color: #ADB5BD;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 20px;
+    color: white;
+
+}
+
+.content-container{
+    background-color: #DEE2E6;
+}
+
