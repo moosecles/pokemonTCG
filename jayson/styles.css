@@ -1,6 +1,7 @@
 body {
     background-color: #E9ECEF;
     margin: 0 100px;
+    font-family: 'Lato';
 }
 
 nav {
@@ -25,13 +26,19 @@ nav input{
     width: 200px;
     height: 20px;
     color: white;
-
+    text-align: center;
+}
+nav input::placeholder {
+    color: white; 
+    opacity: 1; 
 }
 
 .content-container{
     background-color: #DEE2E6;
     display: flex;
     flex-direction: column;
+    max-height: 100vh;
+    max-width: 100%;
 }
 
 .filter{
@@ -70,21 +77,26 @@ nav input{
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 0rem;
+    padding-left: 1%;
     justify-items: center;
     align-content: start;
     max-width: 1200px; /* Set the maximum width of the container */
-    overflow-x: auto;
+    height: 80vh;
+    overflow: auto;
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
 }
 
 .card {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: calc(20% - 1.5rem); /* Adjust the max-width so that 5 cards fit in a row */
-    padding: 0.75rem; /* Adjust the padding to fit the cards within the container */
-    margin: 0.75rem; /* Adjust the margin to fit the cards within the container */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    max-width: 50%;
+
 }
 .card img {
     max-width: 100%;
