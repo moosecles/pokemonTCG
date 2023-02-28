@@ -30,5 +30,63 @@ nav input{
 
 .content-container{
     background-color: #DEE2E6;
+    display: flex;
+    flex-direction: column;
 }
 
+.filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+.dropdown {
+    display:flex;
+    flex-grow: 1;
+    max-width: 100%;
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select {
+    background: #E9ECEF;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-items: center;
+    align-content: start;
+    max-width: 1200px; /* Set the maximum width of the container */
+    overflow-x: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(20% - 1.5rem); /* Adjust the max-width so that 5 cards fit in a row */
+    padding: 0.75rem; /* Adjust the padding to fit the cards within the container */
+    margin: 0.75rem; /* Adjust the margin to fit the cards within the container */
+}
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+}
