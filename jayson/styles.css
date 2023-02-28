@@ -78,7 +78,7 @@ nav input::placeholder {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0rem;
-    padding-left: 1%;
+
     justify-items: center;
     align-content: start;
     max-width: 1200px; /* Set the maximum width of the container */
