@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Pokemon TCG</title>
 </head>
 
@@ -17,42 +18,28 @@
         <input type="text" placeholder= "search">
 </nav>
 <div class="content-container">
-    <div class="filter">
-        <div class="dropdown">
-            <div class="select">
-                <span class="selected">Collection</span>
-                <div class="caret"></div>
+    <div class="filter-container">
+        <div class="filter">
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button>Price</button>
+                <div class="dropdown-menu">
+                    Dropdown Content
+                </div>
             </div>
-            <ul class="menu">
-                <li>Op1</li>
-                <li>Op2</li>
-                <li>Op3</li>
-                <li>Op4</li>
-            </ul>
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button>Pebis</button>
+                <div class="dropdown-menu"> 
+                    Dropdown Content
+                </div>
+            </div>
         </div>
-        <div class="dropdown">
-            <div class="select">
-                <span class="selected">Price</span>
-                <div class="caret"></div>
+        <div class="sortby">
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button>Sort By</button>
+                <div class="dropdown-menu">
+                    Dropdown Content
+                </div>
             </div>
-            <ul class="menu">
-                <li>Op1</li>
-                <li>Op2</li>
-                <li>Op3</li>
-                <li>Op4</li>
-            </ul>
-        </div>
-        <div class="dropdown">
-            <div class="select">
-                <span class="selected">Price</span>
-                <div class="caret"></div>
-            </div>
-            <ul class="menu">
-                <li>Op1</li>
-                <li>Op2</li>
-                <li>Op3</li>
-                <li>Op4</li>
-            </ul>
         </div>
     </div>
 
