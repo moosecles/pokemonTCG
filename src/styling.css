@@ -1,0 +1,140 @@
+body {
+    background-color: #E9ECEF;
+    margin: 0 100px;
+    font-family: 'Lato';
+}
+
+nav {
+    background-color: #E9ECEF;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+    height: 65%;
+    width: auto;
+    margin-right: 75%;
+}
+
+nav input{
+    background-color: #ADB5BD;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 20px;
+    color: white;
+    text-align: center;
+}
+nav input::placeholder {
+    color: white; 
+    opacity: 1; 
+}
+
+.content-container{
+    background-color: #DEE2E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+.filter{
+    display: flex;
+    flex-direction: row;
+}
+
+.sortby{
+    display: flex;
+    justify-content: flex-end;
+}
+.filter *{
+    flex-grow: 1;
+}
+
+
+.filter-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    gap: 2rem;
+    background-color: #E9ECEF;
+    margin: 2%;
+}
+
+.dropdown {
+    position: relative;
+
+}
+.dropdown-menu{
+    position: absolute;
+    left: 35%;
+    top: calc(100% + .25rem);
+    background-color: #DEE2E6;
+    padding:.75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease-in-out, translate 150ms ease-in-out;
+    transform: translateY(-10px);
+}
+.dropdown.active > .link + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.link{
+    background: none;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 0 50px;
+
+}
+
+.select {
+    background: #E9ECEF;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    justify-content: center;
+    justify-items: center;
+    align-content: start;
+    height: 80vh;
+    overflow: auto;
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; 
+    border: 1px solid rgba(0, 0, 0, 0.74);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.404);
+    border-radius: 15px;
+
+}
+.card img {
+    width: 100%;
+}
